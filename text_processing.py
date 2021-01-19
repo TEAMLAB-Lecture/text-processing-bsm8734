@@ -75,7 +75,11 @@ def no_vowels(input_string):
     no_vowel_string = ""
 
     # erase specific chars
-    for i in ['a', 'e', 'i', 'o', 'u']:
+    arr = ['a', 'e', 'i', 'o', 'u']
+    arr1 = []
+    for i in arr:
+        arr1.append(i.upper())
+    for i in arr+arr1:
         str = str.replace(i, '')
     no_vowel_string = str
 
